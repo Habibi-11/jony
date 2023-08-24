@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --font-color: #DB9A64;
+    --bg-color: #311E25;
+    --bg-color-2: #3B2930;
+    --font-family: Arial, Helvetica, sans-serif;
+    --transition: 0.4s;
+}
+
+/* project */
+
+header .container-project {
+    height: 800px;
+    padding-top: 231px;
+    padding-bottom: 0;
+}
+
+header .container-project h1 {
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 3em;
+    color: #fff;
+    margin-bottom: 1.5em;
+    text-align: center;
+}
+
+header .container-project .image {
+    width: 100%;
+    text-align: center;
+}
+
+header .container-project .image img {
+    width: 70%
+}
+
+@media (max-width: 937px) {
+    header .container-project {
+        padding-top: 2em;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    header .container-project .image img {
+        width: 80%;
+    }
+
+    header .container-project h1 {
+        font-size: 2em
+    }
+}
+
+@media screen and (max-width: 524px) {
+    header .container-project .image img {
+        width: 92%;
+    }
+
+    header .container-project {
+        padding-top: 4em;
+    }
+
+    header .container-project h1 {
+        font-size: 1.5em
+    }
+}
+
+@media screen and (max-width: 425px) {
+    header .container-project .image {
+        margin-top: 6em;
+    }
+
+}
+
+/* overview */
+
+.overview-container {
+    background: var(--bg-color-2);
+    padding: 13em 23em
+}
+
+
+.overview-container .overview [class^="text-"] {
+    padding: 1em 0;
+}
+
+.overview-container .overview [class^="text-"] h2 {
+    font-family: var(--font-family);
+    font-weight: 500;
+    color: #fff;
+}
+
+.overview-container .overview [class^="text-"]  p {
+    font-family: var(--font-family);
+    font-weight: 500;
+    color: #C9C9C9;
+    margin: 20px 0;
+    line-height: 30px
+}
+
+.overview-container .box {
+    border: 1px solid var(--font-color);
+    padding: 1.5em 0;
+    text-align: center;
+    transition: var(--transition);
+}
+
+.overview-container .box:hover  {
+    background-color: var(--font-color);
+}
+.overview-container .box:hover h3 {
+    color: #fff;
+}
+
+.overview-container .box h3 {
+    font-family: var(--font-family);
+    font-weight: 500;
+    text-transform: capitalize;
+    color: var(--font-color);
+    transition: var(--transition);
+}
+
+
+@media screen and (max-width: 1024px) {
+    .overview-container {
+        padding: 9em 12em;
+    }
+}
+
+@media screen and (max-width: 937px) {
+    .overview-container {
+        padding: 13em 10em;
+    }
+}
+@media screen and (max-width: 768px) {
+    .overview-container {
+        padding: 9em 2em;
+    }
+}

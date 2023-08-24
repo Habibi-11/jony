@@ -1,0 +1,602 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --font-color: #DB9A64;
+    --bg-color: #311E25;
+    --bg-color-2: #3B2930;
+    --font-family: Arial, Helvetica, sans-serif;
+    --transition: 0.4s;
+}
+
+header .element-text {
+    text-align: center;
+    padding: 11em 0;
+}
+
+header .element-text h1 {
+    font-family: var(--font-family);
+    text-transform: capitalize;
+    font-size: 4em;
+    font-weight: 500;
+    color: #fff;
+}
+
+@media screen and (max-width: 970px) {
+    header {
+        height: 50vh;
+    }
+
+    header .element-text {
+        padding: 9em 0;
+    }
+}
+
+@media screen and (max-width: 755px) {
+    header .element-text h1 {
+        font-size: 2em
+    }
+}
+
+.sample-text {
+    padding: 5em;
+    width: 100%;
+}
+
+.sample-text h2 {
+    font-family: var(--font-family);
+    font-weight: 400;
+    text-transform: capitalize;
+    margin-bottom: 1em;
+}
+
+.sample-text p::first-letter {
+    text-transform: capitalize;
+}
+
+.sample-text p {
+    font-family: var(--font-family);
+    font-weight: 400;
+}
+
+.sample-text p span,
+.sample-text p sup,
+.sample-text p strike,
+.sample-text p sub {
+    color: red;
+}
+
+.sample-text p span:last-child {
+    text-decoration: underline
+}
+
+.sample-text p {
+    line-height: 25px;
+    color: #4D4D4D;
+}
+
+@media screen and (max-width: 584px) {
+    .sample-text {
+        padding: 1em;
+    }
+}
+
+.sample-btn-container {
+    width: 100%;
+    height: auto;
+    padding: 5em;
+}
+
+.sample-btn-container h2 {
+    font-family: var(--font-family);
+    font-weight: 400;
+    text-transform: capitalize;
+    margin-bottom: 1em;
+}
+
+.sample-btn-container .btn-container {
+    width: 100%;
+}
+
+.sample-btn-container .btn-container [class^="btn-"] button {
+    padding: 1em 2em;
+    text-align: center;
+    text-transform: capitalize;
+    font-weight: 600;
+    transition: var(--transition);
+    cursor: pointer;
+    margin: 10px;
+}
+
+.sample-btn-container .btn-container [class^="btn-"] button:first-child {
+    border: none;
+    background: transparent;
+}
+
+.sample-btn-container .btn-container [class^="btn-1"] button:nth-child(2),
+.sample-btn-container .btn-container [class^="btn-3"] button:nth-child(2) {
+    background-color: #ff5e13;
+    border: none;
+    color: #fff;
+}
+
+.sample-btn-container .btn-container [class^="btn-1"] button:nth-child(2):hover,
+.sample-btn-container .btn-container [class^="btn-3"] button:nth-child(2):hover {
+    background-color: #fff;
+    border: #ff5e13 1px solid;
+    color: #ff5e13;
+}
+
+.sample-btn-container .btn-container [class^="btn-1"] button:nth-child(3),
+.sample-btn-container .btn-container [class^="btn-3"] button:nth-child(3) {
+    background-color: #4cd3e3;
+    border: none;
+    color: #fff;
+}
+
+.sample-btn-container .btn-container [class^="btn-1"] button:nth-child(3):hover,
+.sample-btn-container .btn-container [class^="btn-3"] button:nth-child(3):hover {
+    background-color: #fff;
+    border: #4cd3e3 1px solid;
+    color: #4cd3e3;
+}
+
+.sample-btn-container .btn-container [class^="btn-1"] button:nth-child(4),
+.sample-btn-container .btn-container [class^="btn-3"] button:nth-child(4) {
+    background-color: #38a4ff;
+    border: none;
+    color: #fff;
+}
+
+.sample-btn-container .btn-container [class^="btn-1"] button:nth-child(4):hover,
+.sample-btn-container .btn-container [class^="btn-3"] button:nth-child(4):hover {
+    background-color: #fff;
+    border: #38a4ff 1px solid;
+    color: #38a4ff;
+}
+
+.sample-btn-container .btn-container [class^="btn-1"] button:nth-child(5),
+.sample-btn-container .btn-container [class^="btn-3"] button:nth-child(5) {
+    background-color: #f4e700;
+    border: none;
+    color: #fff;
+}
+
+.sample-btn-container .btn-container [class^="btn-1"] button:nth-child(5):hover,
+.sample-btn-container .btn-container [class^="btn-3"] button:nth-child(5):hover {
+    background-color: #fff;
+    border: #f4e700 1px solid;
+    color: #f4e700;
+}
+
+.sample-btn-container .btn-container [class^="btn-1"] button:nth-child(6),
+.sample-btn-container .btn-container [class^="btn-3"] button:nth-child(6) {
+    background-color: #f44a40;
+    border: none;
+    color: #fff;
+}
+
+.sample-btn-container .btn-container [class^="btn-1"] button:nth-child(6):hover,
+.sample-btn-container .btn-container [class^="btn-3"] button:nth-child(6):hover {
+    background-color: #fff;
+    border: #f44a40 1px solid;
+    color: #f44a40;
+}
+
+.sample-btn-container .btn-container [class^="btn-1"] button:nth-child(7),
+.sample-btn-container .btn-container [class^="btn-3"] button:nth-child(7) {
+    background-color: transparent;
+    border: none;
+    color: #415094;
+    text-decoration: underline;
+}
+
+.sample-btn-container .btn-container [class^="btn-1"] button:nth-child(8),
+.sample-btn-container .btn-container [class^="btn-3"] button:nth-child(8) {
+    background-color: transparent;
+    border: none;
+    cursor: not-allowed;
+}
+
+/* .sample-btn-container .btn-container [class^="btn-5"] button,
+.sample-btn-container .btn-container [class^="btn-"] button, */
+
+.sample-btn-container .btn-container [class^="btn-2"] button:nth-child(2),
+.sample-btn-container .btn-container [class^="btn-4"] button:nth-child(2) {
+    background-color: transparent;
+    border: 1px solid #ff5e13;
+    color: #ff5e13;
+}
+
+.sample-btn-container .btn-container [class^="btn-2"] button:nth-child(2):hover,
+.sample-btn-container .btn-container [class^="btn-4"] button:nth-child(2):hover {
+    background-color: transparent;
+    border: #ff5e13 1px solid;
+    color: #ff5e13;
+}
+
+.sample-btn-container .btn-container [class^="btn-2"] button:nth-child(3),
+.sample-btn-container .btn-container [class^="btn-4"] button:nth-child(3) {
+    background-color: transparent;
+    border: #4cd3e3 1px solid;
+    color: #4cd3e3;
+}
+
+.sample-btn-container .btn-container [class^="btn-2"] button:nth-child(3):hover,
+.sample-btn-container .btn-container [class^="btn-4"] button:nth-child(3):hover {
+    background-color: transparent;
+    border: #4cd3e3 1px solid;
+    color: #4cd3e3;
+}
+
+.sample-btn-container .btn-container [class^="btn-2"] button:nth-child(4),
+.sample-btn-container .btn-container [class^="btn-4"] button:nth-child(4) {
+    background-color: transparent;
+    border: #38a4ff 1px solid;
+    border: 1px solid;
+    color: #38a4ff;
+}
+
+.sample-btn-container .btn-container [class^="btn-2"] button:nth-child(4):hover,
+.sample-btn-container .btn-container [class^="btn-4"] button:nth-child(4):hover {
+    background-color: #4cd3e3;
+    color: #fff;
+}
+
+.sample-btn-container .btn-container [class^="btn-2"] button:nth-child(5),
+.sample-btn-container .btn-container [class^="btn-4"] button:nth-child(5) {
+    background-color: transparent;
+    border: #f4e700 1px solid;
+    color: #f4e700;
+}
+
+.sample-btn-container .btn-container [class^="btn-2"] button:nth-child(5):hover,
+.sample-btn-container .btn-container [class^="btn-4"] button:nth-child(5):hover {
+    background-color: transparent;
+    border: #f4e700 1px solid;
+    color: #f4e700;
+}
+
+.sample-btn-container .btn-container [class^="btn-2"] button:nth-child(6),
+.sample-btn-container .btn-container [class^="btn-4"] button:nth-child(6) {
+    background-color: transparent;
+    border: #f44a40 1px solid;
+    color: #f44a40;
+}
+
+.sample-btn-container .btn-container [class^="btn-2"] button:nth-child(6):hover,
+.sample-btn-container .btn-container [class^="btn-4"] button:nth-child(6):hover {
+    background-color: transparent;
+    color: #f44a40;
+}
+
+.sample-btn-container .btn-container [class^="btn-2"] button:nth-child(7),
+.sample-btn-container .btn-container [class^="btn-4"] button:nth-child(7) {
+    background-color: transparent;
+    border: none;
+    color: #415094;
+    text-decoration: underline;
+}
+
+.sample-btn-container .btn-container [class^="btn-2"] button:nth-child(8),
+.sample-btn-container .btn-container [class^="btn-4"] button:nth-child(8) {
+    background-color: transparent;
+    border: none;
+    cursor: not-allowed;
+}
+
+/* kladshfds;ljf;lskdjflsd */
+/* kladshfds;ljf;lskdjflsd */
+
+.sample-btn-container .btn-container [class^="btn-5"] button:nth-child(2),
+.sample-btn-container .btn-container [class^="btn-7"] button:nth-child(2) {
+    background-color: #ff5e13;
+    border: none;
+    border-radius: 50px;
+    color: #fff;
+}
+
+.sample-btn-container .btn-container [class^="btn-5"] button:nth-child(2):hover,
+.sample-btn-container .btn-container [class^="btn-7"] button:nth-child(2):hover {
+    background-color: #fff;
+    border: #ff5e13 1px solid;
+    color: #ff5e13;
+}
+
+.sample-btn-container .btn-container [class^="btn-5"] button:nth-child(3),
+.sample-btn-container .btn-container [class^="btn-7"] button:nth-child(3) {
+    background-color: #4cd3e3;
+    border: none;
+    border-radius: 50px;
+    color: #fff;
+}
+
+.sample-btn-container .btn-container [class^="btn-5"] button:nth-child(3):hover,
+.sample-btn-container .btn-container [class^="btn-7"] button:nth-child(3):hover {
+    background-color: #fff;
+    border: #4cd3e3 1px solid;
+    color: #4cd3e3;
+}
+
+.sample-btn-container .btn-container [class^="btn-5"] button:nth-child(4),
+.sample-btn-container .btn-container [class^="btn-7"] button:nth-child(4) {
+    background-color: #38a4ff;
+    border: none;
+    border-radius: 50px;
+    color: #fff;
+}
+
+.sample-btn-container .btn-container [class^="btn-5"] button:nth-child(4):hover,
+.sample-btn-container .btn-container [class^="btn-7"] button:nth-child(4):hover {
+    background-color: #fff;
+    border: #38a4ff 1px solid;
+    color: #38a4ff;
+}
+
+.sample-btn-container .btn-container [class^="btn-5"] button:nth-child(5),
+.sample-btn-container .btn-container [class^="btn-7"] button:nth-child(5) {
+    background-color: #f4e700;
+    border: none;
+    border-radius: 50px;
+    color: #fff;
+}
+
+.sample-btn-container .btn-container [class^="btn-5"] button:nth-child(5):hover,
+.sample-btn-container .btn-container [class^="btn-7"] button:nth-child(5):hover {
+    background-color: #fff;
+    border: #f4e700 1px solid;
+    color: #f4e700;
+}
+
+.sample-btn-container .btn-container [class^="btn-5"] button:nth-child(6),
+.sample-btn-container .btn-container [class^="btn-7"] button:nth-child(6) {
+    background-color: #f44a40;
+    border: none;
+    border-radius: 50px;
+    color: #fff;
+}
+
+.sample-btn-container .btn-container [class^="btn-5"] button:nth-child(6):hover,
+.sample-btn-container .btn-container [class^="btn-7"] button:nth-child(6):hover {
+    background-color: #fff;
+    border: #f44a40 1px solid;
+    color: #f44a40;
+}
+
+.sample-btn-container .btn-container [class^="btn-5"] button:nth-child(7),
+.sample-btn-container .btn-container [class^="btn-7"] button:nth-child(7) {
+    background-color: transparent;
+    border: none;
+    border-radius: 50px;
+    color: #415094;
+    text-decoration: underline;
+}
+
+.sample-btn-container .btn-container [class^="btn-5"] button:nth-child(8),
+.sample-btn-container .btn-container [class^="btn-7"] button:nth-child(8) {
+    background-color: transparent;
+    border: none;
+    border-radius: 50px;
+    cursor: not-allowed;
+}
+
+/* kladshfds;ljf;lskdjflsd */
+/* kladshfds;ljf;lskdjflsd */
+
+.sample-btn-container .btn-container [class^="btn-6"] button:nth-child(2),
+.sample-btn-container .btn-container [class^="btn-8"] button:nth-child(2) {
+    background-color: transparent;
+    border: 1px solid #ff5e13;
+    color: #ff5e13;
+    border-radius: 50px;
+}
+
+.sample-btn-container .btn-container [class^="btn-6"] button:nth-child(2):hover,
+.sample-btn-container .btn-container [class^="btn-8"] button:nth-child(2):hover {
+    background-color: transparent;
+    border: #ff5e13 1px solid;
+    color: #ff5e13;
+}
+
+.sample-btn-container .btn-container [class^="btn-6"] button:nth-child(3),
+.sample-btn-container .btn-container [class^="btn-8"] button:nth-child(3) {
+    background-color: transparent;
+    border-radius: 50px;
+    border: #4cd3e3 1px solid;
+    color: #4cd3e3;
+}
+
+.sample-btn-container .btn-container [class^="btn-6"] button:nth-child(3):hover,
+.sample-btn-container .btn-container [class^="btn-8"] button:nth-child(3):hover {
+    background-color: transparent;
+    color: #4cd3e3;
+}
+
+.sample-btn-container .btn-container [class^="btn-6"] button:nth-child(4),
+.sample-btn-container .btn-container [class^="btn-8"] button:nth-child(4) {
+    background-color: transparent;
+    border-radius: 50px;
+    border: #38a4ff 1px solid;
+    color: #38a4ff;
+}
+
+.sample-btn-container .btn-container [class^="btn-6"] button:nth-child(4):hover,
+.sample-btn-container .btn-container [class^="btn-8"] button:nth-child(4):hover {
+    background-color: transparent;
+    color: #38a4ff;
+}
+
+.sample-btn-container .btn-container [class^="btn-6"] button:nth-child(5),
+.sample-btn-container .btn-container [class^="btn-8"] button:nth-child(5) {
+    background-color: transparent;
+    border-radius: 50px;
+    border: #f4e700 1px solid;
+    color: #f4e700;
+}
+
+.sample-btn-container .btn-container [class^="btn-6"] button:nth-child(5):hover,
+.sample-btn-container .btn-container [class^="btn-8"] button:nth-child(5):hover {
+    background-color: transparent;
+    color: #f4e700;
+}
+
+.sample-btn-container .btn-container [class^="btn-6"] button:nth-child(6),
+.sample-btn-container .btn-container [class^="btn-8"] button:nth-child(6) {
+    background-color: transparent;
+    border: #f44a40 1px solid;
+    color: #f44a40;
+    border-radius: 50px;
+}
+
+.sample-btn-container .btn-container [class^="btn-6"] button:nth-child(6):hover,
+.sample-btn-container .btn-container [class^="btn-8"] button:nth-child(6):hover {
+    background-color: transparent;
+    color: #f44a40;
+}
+
+.sample-btn-container .btn-container [class^="btn-6"] button:nth-child(7),
+.sample-btn-container .btn-container [class^="btn-8"] button:nth-child(7) {
+    background-color: transparent;
+    border: none;
+    color: #415094;
+    text-decoration: underline;
+}
+
+.sample-btn-container .btn-container [class^="btn-6"] button:nth-child(8),
+.sample-btn-container .btn-container [class^="btn-8"] button:nth-child(8) {
+    background-color: transparent;
+    border: none;
+    cursor: not-allowed;
+}
+
+@media screen and (max-width: 584px) {
+    .sample-btn-container {
+        padding: 1em;
+    }
+}
+
+.left-align {
+    padding: 5em;
+}
+
+
+.left-align h2 {
+    font-family: var(--font-family);
+    font-weight: 400;
+    text-transform: capitalize;
+    margin-bottom: 1em;
+    text-align: left;
+}
+
+.left-align .left {
+    display: flex;
+    gap: 30px
+}
+
+.left-align .left p {
+    font-family: var(--font-family);
+    ;
+    text-transform: capitalize;
+    line-height: 30px;
+    text-align: left;
+    color: #4D4D4D;
+}
+
+.right-align {
+    padding: 5em;
+}
+
+.right-align h2 {
+    font-family: var(--font-family);
+    font-weight: 400;
+    text-transform: capitalize;
+    margin-bottom: 1em;
+    text-align: right;
+}
+
+.right-align .right {
+    display: flex;
+    gap: 30px
+}
+
+.right-align .right p {
+    font-family: var(--font-family);
+    text-transform: capitalize;
+    line-height: 30px;
+    text-align: right;
+    color: #4D4D4D;
+}
+
+@media screen and (max-width: 584px) {
+
+    .left-align,
+    .right-align {
+        padding: 1em;
+    }
+}
+
+@media screen and (max-width: 760px) {
+
+    .right-align .right,
+    .left-align .left {
+        flex-wrap: wrap;
+    }
+}
+
+.definition-box {
+    padding: 5em;
+    width: 100%;
+}
+
+.definition-box h2 {
+    font-family: var(--font-family);
+    font-weight: 400;
+    text-transform: capitalize;
+    margin-bottom: 1em;
+}
+
+.definition-box .box {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.definition-box .box [class^="box-"] {
+    width: 45%;
+    margin: 20px 0;
+}
+
+.definition-box .box [class^="box-"] h3 {
+    font-family: var(--font-family);
+    font-weight: 400;
+    text-transform: capitalize;
+    margin-bottom: 1em;
+}
+
+.definition-box .box [class^="box-"] p {
+    font-family: var(--font-family);
+    color: #4D4D4D;
+    line-height: 30px;
+    text-transform: capitalize;
+}
+
+@media screen and (max-width: 996px) {
+    .definition-box .box {
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (max-width: 764px) {
+    .definition-box .box [class^="box-"] {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 584px) {
+    .definition-box {
+        padding: 1em;
+    }
+}

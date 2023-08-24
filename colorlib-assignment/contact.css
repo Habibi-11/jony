@@ -1,0 +1,174 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --font-color: #DB9A64;
+    --bg-color: #311E25;
+    --bg-color-2: #3B2930;
+    --font-family: Arial, Helvetica, sans-serif;
+    --transition: 0.4s;
+}
+
+.contact-container {
+    padding: 5em;
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact-container .container-1 h2 {
+    font-family: var(--font-family);
+    font-weight: 700;
+    text-transform: capitalize;
+    margin: 20px 0;
+}
+
+.contact-container .container-1 {
+    width: 60%;
+    height: auto
+}
+
+.contact-container .container-1 form {
+    width: 100%;
+    text-align: center;
+}
+
+.contact-container .container-1 form .error {
+    color: red;
+    margin: 15px;
+    text-transform: capitalize;
+}
+
+.contact-container .container-1 form .text-area {
+    width: 100%;
+    height: auto;
+}
+
+.contact-container .container-1 form .text-area textarea {
+    width: 100%;
+    height: 20vh;
+    border: 1px solid var(--font-color);
+    border-radius: 4px;
+    padding: 10px;
+    outline: none;
+}
+
+.contact-container .container-1 form .text-area textarea::placeholder {
+    text-transform: capitalize;
+    font-family: var(--font-family);
+    letter-spacing: 3px;
+}
+
+.contact-container .container-1 form .input-box {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+.contact-container .container-1 form .input-box [class^="input-"] {
+    width: 100%;
+}
+
+.contact-container .container-1 form .input-box [class^="input-"] input {
+    width: 100%;
+    height: auto;
+    padding: 15px;
+    border: 1px solid var(--font-color);
+    border-radius: 3px;
+    outline: none;
+    background:transparent;
+    margin: 10px 0;
+}
+
+.contact-container .container-1 form .input-box [class^="input-"] input::placeholder{
+    text-transform: capitalize;
+}
+
+.contact-container .container-1 form  > input{
+    background-color: orange;
+    width: 100%;
+    height: auto;
+    padding: 15px;
+    border: 1px solid var(--font-color);
+    border-radius: 3px;
+    outline: none;
+    background:transparent;
+    margin: 10px 0;
+}
+
+.contact-container .container-1 form  > input::placeholder {
+    text-transform: capitalize
+}
+
+.contact-container .container-1 form  button {
+    width: 15em;
+    background: transparent;
+    border: 1px solid var(--font-color);
+    text-align: center;
+    padding: 15px 0;
+    text-transform: capitalize;
+    color: var(--font-color);
+    transition: var(--transition);
+    cursor: pointer;
+}
+
+.contact-container .container-1 form button:hover {
+    background: var(--font-color);
+    color: #fff;
+}
+
+.contact-container .container-2 {
+    width: 34%;
+}
+
+.contact-container .container-2 [class^="box-"] {
+    width: 100%;
+    margin: 10px 0;
+    padding: 20px 0;
+    display: flex;
+    gap: 15px;
+}
+
+.contact-container .container-2 [class^="box-"] i {
+    font-size: 1.3em
+}
+
+.contact-container .container-2 [class^="box-"] .text h4 {
+    font-family: var(--font-family);
+    font-weight: 600;
+    margin: 8px 0;
+}
+
+.contact-container .container-2 [class^="box-"] .text p {
+    font-family: var(--font-family);
+    font-weight: 500;
+    color: #4D4D4D;
+}
+
+@media screen and (max-width: 851px) {
+    .contact-container {
+        padding: 3em;
+    }
+}
+
+@media screen and (max-width: 683px) {
+    .contact-container {
+        flex-wrap: wrap;
+    }
+
+    .contact-container .container-1 {
+        width: 100%;
+    }
+
+    .contact-container .container-2 {
+        width: 100%;
+    }
+
+    .contact-container {
+        padding: 1em;
+    }
+}

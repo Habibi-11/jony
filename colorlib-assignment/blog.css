@@ -1,0 +1,298 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --font-color: #DB9A64;
+    --bg-color: #311E25;
+    --bg-color-2: #3B2930;
+    --font-family: Arial, Helvetica, sans-serif;
+    --transition: 0.4s;
+}
+
+header .first-text {
+    text-align: center;
+    padding: 11em 0;
+}
+
+header .first-text h1 {
+    font-family: var(--font-family);
+    text-transform: capitalize;
+    font-size: 4em;
+    font-weight: 500;
+    color: #fff;
+}
+
+@media screen and (max-width: 970px) {
+    header {
+        height: 50vh;
+    }
+
+    header .first-text {
+        padding: 9em 0;
+    }
+}
+
+@media screen and (max-width: 755px) {
+    header .first-text h1 {
+        font-size: 2em
+    }
+}
+
+/* blog */
+
+.blog-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 7em 5em;
+    gap: 2em;
+}
+
+/* container -1 */
+
+.blog-container .container-1 {
+    width: 100%;
+}
+
+
+.blog-container .container-1 [class^="box-"] {
+    width: 100%;
+    margin: 30px 0;
+    box-shadow: 0 0 2em rgba(0, 0, 0, 0.1);
+}
+
+.blog-container .container-1 [class^="box-"] .image {
+    width: 100%;
+    position: relative;
+}
+
+.blog-container .container-1 [class^="box-"] .image img {
+    width: 100%
+}
+
+.blog-container .container-1 [class^="box-"] .image .month {
+    background: red;
+    height: auto;
+    width: 5em;
+    text-align: center;
+    padding: 1.2em;
+    border-radius: 8px;
+    position: absolute;
+    bottom: -20px;
+    font-family: var(--font-family);
+    font-weight: 400;
+    color: #fff;
+    text-transform: capitalize;
+    font-size: 1.2em;
+    transition: var(--transition);
+    left: 40px;
+}
+
+.blog-container .container-1 [class^="box-"] .image .month:hover {
+    color: red;
+    border: 1px solid red;
+    background: transparent;
+}
+
+.blog-container .container-1 [class^="box-"] .text {
+    font-family: var(--font-family);
+    margin: 1em 0;
+    padding: 1em;
+}
+
+.blog-container .container-1 [class^="box-"] .text a {
+    color: #000;
+    transition: var(--transition);
+    text-decoration: none;
+}
+
+.blog-container .container-1 [class^="box-"] .text a:hover {
+    color: var(--font-color);
+}
+
+.blog-container .container-1 [class^="box-"] p::first-letter {
+    text-transform: capitalize;
+}
+
+.blog-container .container-1 [class^="box-"] .text-2 {
+    font-family: var(--font-family);
+    font-weight: 400;
+    line-height: 35px;
+    margin-bottom: 10px;
+    color: #4D4D4D;
+    padding: 1em;
+}
+
+.blog-container .container-1 [class^="box-"] .icon {
+    font-family: var(--font-family);
+    color: #4D4D4D;
+    padding: 1em;
+}
+
+.blog-container .container-1 [class^="box-"] .icon span {
+    cursor: pointer;
+    transition: var(--transition)
+}
+
+.blog-container .container-1 [class^="box-"] .icon span:hover {
+    color: var(--font-color);
+}
+
+/* container - 2 */
+
+.blog-container .container-2 {
+    width: 45%;
+}
+
+.blog-container .container-2 [class^="box1"] {
+    background: #fbf9ff;
+    margin: 30px 0;
+    width: 100%;
+    border-radius: 5px;
+    padding: 20px
+}
+
+.blog-container .container-2 [class^="box1"] hr {
+    border-color: #f0e9ff;
+    margin: 20px 0
+}
+
+.blog-container .container-2 [class^="box1"] form input {
+    border: 1px solid #f0e9ff;
+    padding: 15px;
+    width: 100%;
+    border-radius: 3px;
+    outline: none;
+    margin-bottom: 20px;
+}
+
+.blog-container .container-2 [class^="box1"] form input::placeholder {
+    text-transform: capitalize;
+}
+
+.blog-container .container-2 [class^="box1"] form input:focus {
+    border-color: var(--font-color);
+}
+
+.blog-container .container-2 [class^="box1"] form button {
+    width: 100%;
+    color: var(--font-color);
+    text-transform: uppercase;
+    border: 1px solid var(--font-color);
+    text-align: center;
+    padding: 20px 0;
+    transition: var(--transition);
+    background: transparent;
+}
+
+.blog-container .container-2 [class^="box1"] form button:hover {
+    background-color: var(--font-color);
+    color: #ffffff;
+}
+
+.blog-container .container-2 [class^="box1"] h3 {
+    font-family: var(--font-family);
+    text-transform: capitalize;
+    font-weight: 400;
+    color: #000;
+}
+
+.blog-container .container-2 [class^="box1"] p {
+    color: #888888;
+    font-family: var(--font-family);
+}
+
+.blog-container .container-2 [class^="box1"] p::first-letter {
+    text-transform: uppercase;
+}
+
+
+.blog-container .container-2 [class^="box1"] .post [class^="post-"] {
+    display: flex;
+    gap: 13px;
+    align-items: center;
+    margin: 15px 0;
+}
+
+.blog-container .container-2 [class^="box1"] .post [class^="post-"] .word {
+    line-height: 20px
+}
+
+.blog-container .container-2 [class^="box1"] .post [class^="post-"] .word h4 {
+    font-family: var(--font-family);
+    font-weight: 400;
+    transition: var(--transition);
+    cursor: pointer;
+    margin-bottom: 0.5em;
+}
+
+.blog-container .container-2 [class^="box1"] .post [class^="post-"] .word h4:hover {
+    color: var(--font-color);
+}
+
+.blog-container .container-2 [class^="box1"] .post [class^="post-"] .word h4::first-letter {
+    text-transform: uppercase
+}
+
+.blog-container .container-2 [class^="box1"] .post [class^="post-"] .word p {
+    font-weight: 200;
+    font-size: 14px
+}
+
+.blog-container .container-2 [class^="box1"] .btn-container {
+    display: flex;
+    gap: 6px;
+    flex-wrap: wrap
+}
+
+.blog-container .container-2 [class^="box1"] .btn-container button {
+    text-align: center;
+    padding: 9px 12px;
+    color: #7c7a7a;
+    border: 1px solid var(--font-color);
+    border-radius: 3px;
+    cursor: pointer;
+    transition: var(--transition);
+    margin: 3px 0
+}
+
+.blog-container .container-2 [class^="box1"] .btn-container button:hover {
+    background: var(--font-color);
+    color: #fff;
+}
+
+.blog-container .container-2 [class^="box1"] .grid {
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.blog-container .container-2 [class^="box1"] .grid img {
+    width: 30%;
+}
+
+@media screen and (max-width: 937px) {
+    .blog-container {
+        flex-wrap: wrap;
+    }
+
+    .blog-container .container-2 {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .blog-container .container-1 [class^="box-"] .image .month {
+        font-size: 1em;
+        left: 25px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .blog-container {
+        padding: 1em;
+    }
+}
